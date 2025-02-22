@@ -1,0 +1,68 @@
+[gd_scene load_steps=20 format=3 uid="uid://dedmx8fh47ry3"]
+
+[ext_resource type="Script" path="res://Button.gd" id="1_plfc2"]
+[ext_resource type="AudioStream" uid="uid://cacw6ws22fwpb" path="res://sounds/2.wav" id="2_g875h"]
+[ext_resource type="AudioStream" uid="uid://g356rc5ua3wx" path="res://sounds/3.wav" id="3_4syce"]
+[ext_resource type="AudioStream" uid="uid://bgiyfd4j3blgd" path="res://sounds/4.mp3" id="4_26qcx"]
+[ext_resource type="AudioStream" uid="uid://cnw3x5qtbcihk" path="res://sounds/5.mp3" id="5_xhmu3"]
+[ext_resource type="AudioStream" uid="uid://bntrnj2mhvylg" path="res://sounds/6.mp3" id="6_uiorg"]
+[ext_resource type="AudioStream" uid="uid://di1u4tabwuj4x" path="res://sounds/7.mp3" id="7_s5xt7"]
+[ext_resource type="AudioStream" uid="uid://b3fwydalsu37r" path="res://sounds/8.mp3" id="8_exmie"]
+[ext_resource type="AudioStream" uid="uid://dqig5lcolg3js" path="res://sounds/9.mp3" id="9_wiavo"]
+[ext_resource type="AudioStream" uid="uid://bkdh8mt6t5qg3" path="res://sounds/10.mp3" id="10_fd0t1"]
+[ext_resource type="AudioStream" uid="uid://ban5bk64mafcw" path="res://sounds/11.mp3" id="11_txan0"]
+[ext_resource type="AudioStream" uid="uid://b6fjgi7kis6pq" path="res://sounds/12.mp3" id="12_q781e"]
+[ext_resource type="AudioStream" uid="uid://dej48etbobg2" path="res://sounds/13.mp3" id="13_agwp6"]
+[ext_resource type="AudioStream" uid="uid://bgf387qp7asin" path="res://sounds/14.mp3" id="14_ow5l5"]
+[ext_resource type="AudioStream" uid="uid://h4wfjngu4ud8" path="res://sounds/15.mp3" id="15_5t2wm"]
+[ext_resource type="AudioStream" uid="uid://cnhwo3k4huxis" path="res://sounds/16.mp3" id="16_4iomi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ty3g6"]
+bg_color = Color(1, 0.4, 0.4, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kvykj"]
+bg_color = Color(0.752941, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dq3ts"]
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -575.5
+offset_top = -322.5
+offset_right = 575.5
+offset_bottom = 322.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="." node_paths=PackedStringArray("audio_player")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -241.5
+offset_top = -138.5
+offset_right = 241.5
+offset_bottom = 138.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_ty3g6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kvykj")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_dq3ts")
+text = "NOT TOUCH THE BUTTON"
+script = ExtResource("1_plfc2")
+sound_files = Array[AudioStream]([ExtResource("4_26qcx"), ExtResource("2_g875h"), ExtResource("3_4syce"), ExtResource("5_xhmu3"), ExtResource("6_uiorg"), ExtResource("7_s5xt7"), ExtResource("8_exmie"), ExtResource("9_wiavo"), ExtResource("10_fd0t1"), ExtResource("11_txan0"), ExtResource("12_q781e"), ExtResource("13_agwp6"), ExtResource("14_ow5l5"), ExtResource("15_5t2wm"), ExtResource("16_4iomi")])
+audio_player = NodePath("../AudioStreamPlayer")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

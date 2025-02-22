@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bm8sfa6c13m67"
+path="res://.godot/imported/Grabación (68).mp3-68bf64919f0358de3e81d68af1466a26.mp3str"
+
+[deps]
+
+source_file="res://sounds/Grabación (68).mp3"
+dest_files=["res://.godot/imported/Grabación (68).mp3-68bf64919f0358de3e81d68af1466a26.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

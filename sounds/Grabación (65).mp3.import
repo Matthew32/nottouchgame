@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://baivf1nkqb047"
+path="res://.godot/imported/Grabación (65).mp3-528d8934cf742375881b6ea27e99fcc2.mp3str"
+
+[deps]
+
+source_file="res://sounds/Grabación (65).mp3"
+dest_files=["res://.godot/imported/Grabación (65).mp3-528d8934cf742375881b6ea27e99fcc2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
